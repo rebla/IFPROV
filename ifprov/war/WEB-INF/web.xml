@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<welcome-file-list>
+		<welcome-file>Main</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>es.upm.dit.isst.MainServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Offers</servlet-name>
+		<servlet-class>es.upm.dit.isst.OffersDashboard</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddOffer</servlet-name>
+		<servlet-class>es.upm.dit.isst.AddOffer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Main</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Offers</servlet-name>
+		<url-pattern>/ofertas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddOffer</servlet-name>
+		<url-pattern>/nuevaoferta</url-pattern>
+	</servlet-mapping>
+</web-app>
